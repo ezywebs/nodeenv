@@ -4,4 +4,6 @@ app.get("/", (req, res) => {
    res.send({hi: "there"}); 
 });
 
-app.listen(8080);
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT);
